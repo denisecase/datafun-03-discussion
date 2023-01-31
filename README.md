@@ -1,6 +1,6 @@
 # datafun-03-discussion
 
-Insights from the discussion
+## Recommended
 
 - Miniconda3 for Python
 - VS Code for editing
@@ -9,11 +9,11 @@ Insights from the discussion
 
 ## Install External Packages
 
+```
 conda install -c conda-forge wordcloud -y
 conda install -c conda-forge matplotlib -y
+```
 
 ## Run The Code
 
 `python learning.py`
-
-
