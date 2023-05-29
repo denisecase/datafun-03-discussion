@@ -24,6 +24,11 @@ This provides a clickable link to your notebook.
 ![Publish Notebook to Binder](./images/publish-binder-notebook.png)
 
 
-
-
 Explore more examples at <https://github.com/binder-examples/>.
+
+## Binder Configuration: postBuild
+
+A postBuild file is a script run after the project is built on Binder. 
+We use it to install and enable ipywidgets and the Jupyter Notebook extensions configurator.
+
+The jupyter_nbextensions_configurator is used to configure the Jupyter Notebook extensions configurator, a graphical user interface for enabling and disabling Jupyter notebook extensions.

@@ -16,17 +16,19 @@ Note: Some key packages are kept updated in my default Python environment and in
 Additional miscellaneous packages are installed from requirements.txt.
 
 ```shell
-python -m pip install --upgrade pip ipykernel jupyterlab
+python -m pip install --upgrade pip ipykernel jupyterlab 
 
 python -m venv .venv
 
 .venv\Scripts\Activate
 
-python -m pip install --upgrade pip ipykernel jupyterlab 
+python -m pip install --upgrade pip ipykernel jupyterlab jupyter_nbextensions_configurator
 
-python -m pip install --ugrade -r requirements.txt
+python -m pip install --upgrade -r requirements.txt
 
 python -m ipykernel install --user --name .venv --display-name "Python (.venv)"
+jupyter nbextensions_configurator enable --user  # can be skipped for notebook >=5.3
+
 ```
 
 Note: If `python` doesn't work, replace it with `py` or `python3`.

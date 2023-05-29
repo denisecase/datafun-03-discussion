@@ -1,5 +1,6 @@
 ipykernel
 ipywidgets
+jupyter_nbextensions_configurator 
 jupyterlab
 matplotlib
 nltk

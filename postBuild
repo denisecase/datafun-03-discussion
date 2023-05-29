@@ -1,0 +1,11 @@
+# Install ipywidgets
+pip install ipywidgets
+
+# Enable ipywidgets Jupyter extension
+jupyter nbextension enable --py widgetsnbextension
+
+# Install jupyter_nbextensions_configurator
+pip install jupyter_nbextensions_configurator
+
+# Enable jupyter_nbextensions_configurator server extension
+jupyter nbextensions_configurator enable --user
