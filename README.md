@@ -2,16 +2,15 @@
 
 ## Recommended
 
-- Miniconda3 for Python
 - VS Code for editing
-- VS Code Extension - Python
-- VS Code Extension - Remote Repositories
 
-## Install External Packages
+## Set Up Virtual Environment
 
 ```
-conda install -c conda-forge wordcloud -y
-conda install -c conda-forge matplotlib -y
+python -m pip install --upgrade pip 
+python -m venv .venv
+.venv\Scripts\Activate
+python -m pip install --upgrade pip ipykernel jupyterlab wordcloud matplotlib
 ```
 
 ## Run The Code
