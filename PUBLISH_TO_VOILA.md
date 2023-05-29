@@ -21,18 +21,19 @@ It will open <http://localhost:8866/> in your browser.
 voila learning.ipynb 
 ```
 
-## Deploy to Binder
+## Publish to Voilà Using Binder
 
 Follow the instructions at [PUBLISH_TO_BINDER.md](./PUBLISH_TO_BINDER.md).
-After Binder deployment, replace the "mybinder.org" part of your Binder URL with "voila.mybinder.org".
+Modify them as described [here](https://voila.readthedocs.io/en/latest/deploy.html#deployment-on-binder) 
+and shown below. 
 
-  - <https://mybinder.org/v2/gh/denisecase/datafun-03-discussion/HEAD?labpath=learning.ipynb>
-  - <https://voila.mybinder.org/v2/gh/denisecase/datafun-03-discussion/HEAD?labpath=learning.ipynb>
+![Deploying Voila to Binder](./images/publish-binder-notebook-voila.png)
+
 
 ## Voilà!
 
 - Explore more examples at <https://voila-gallery.org/>.
 - Create a Voilà badge with a clickable link to your notebook. See the [README.md](./README.md) or [this guide](https://mybinder.readthedocs.io/en/latest/howto/badges.html).
-- [Voilà Example](https://voila.mybinder.org/v2/gh/denisecase/datafun-03-discussion/HEAD?labpath=learning.ipynb)
+- [Voilà Example](https://mybinder.org/v2/gh/denisecase/datafun-03-discussion/HEAD?urlpath=voila%2Frender%2Flearning.ipynb)
 
 ![Voilà Example](./images/published-to-voila.png)
