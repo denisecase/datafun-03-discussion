@@ -1,4 +1,8 @@
-ipykernel 
-jupyterlab 
+ipykernel
+ipywidgets
+jupyterlab
 matplotlib
-wordcloud 
+nltk
+pandas
+seaborn
+wordcloud
