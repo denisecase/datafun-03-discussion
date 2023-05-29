@@ -12,25 +12,34 @@ matplotlib: used to plot the wordcloud
 import wordcloud 
 import matplotlib.pyplot as plt
 
+from util_logger import setup_logger
+logger, logname = setup_logger("learning")
+
 # Read text from file
-with open("learning.txt", "r") as text_file:
+with open("data.txt", "r") as text_file:
+
+  logger.info("Reading from data file.")
+
   # read the entire file into a list of lines
   line_list = text_file.readlines()
+
   # we're at the end of the file after reading
   # so we need to reset the file pointer to the beginning
   # we'll seek() (move to) the 0th byte (character) in the file
   text_file.seek(0)
+
   # read the entire file into a single string
   long_string= text_file.read()
+
   # split the string into a list of words
   word_list = long_string.split()
 
 # Summarize the text
-print(f"There are {len(line_list)} lines in the file.")
-print(f"There are {len(word_list)} words in the file.")
-print("Be patient. ")
-print("The figure (with muliple versions) may take a moment to appear.")
-print("Could you make a new third version?")
+logger.info(f"There are {len(line_list)} lines in the file.")
+logger.info(f"There are {len(word_list)} words in the file.")
+logger.info("Be patient. ")
+logger.info("The figure (with muliple versions) may take a moment to appear.")
+logger.info("Could you make a new third version?")
 
 width_px = 900
 height_px = 600
@@ -92,8 +101,8 @@ plt.subplot(222).set_title("Improved Wordcloud")
 
 
 # save the whole figure to a file
-plt.savefig('learning.png', dpi = 100)
-print("Saved. Showing figure. Can you add another? Hit Ctrl-C to quit.")
+plt.savefig('output.png', dpi = 100)
+logger.info("Saved. Showing figure. Can you add another? Hit Ctrl-C to quit.")
 
 # show the whole figure
 plt.show()
