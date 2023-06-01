@@ -23,7 +23,6 @@ This will:
 1. install an upgraded version of pip in our virtual environment
 1. install upgraded versions of the packages listed in [requirements.txt](./requirements.txt)
 1. set up the ipykernel to run Jupyter Notebooks locally in our .venv virtual environment
-1. install the Jupyter Notebook Extensions Configurator
 
 The commands are for Windows and PowerShell. 
 Slight adjustments may be needed for other environments.
@@ -45,8 +44,10 @@ python -m pip install --upgrade -r requirements.txt
 
 python -m ipykernel install --user --name .venv --display-name "Python (.venv)"
 
-jupyter nbextensions_configurator enable --user  # can be skipped for notebook >=5.3
 ```
+
+![Interactive Notebooks in VS Code](images/vscode-interactive-notebook-after-ipykernel-install-command.PNG)
+
 
 -----
 
