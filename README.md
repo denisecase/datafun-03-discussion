@@ -68,8 +68,9 @@ We asked: Which learning resources do you prefer/find most effective?
 ## Publishing (Deploying) Jupyter Notebooks
 
 There are some great options for publishing/deploying notebooks for free.
-Binder is easier.
+Tried Binder first. 
 Voila builds on Binder and enables interactive widgets.  
+Hit the rate limits, so tried Google Colab. That seems to work well.
 
 - Read [PUBLISH_TO_BINDER.md](./PUBLISH_TO_BINDER.md).
 - Read [PUBLISH_WITH_VOILA.md](./PUBLISH_WITH_VOILA.md).

@@ -58,6 +58,8 @@ In your GitHub repo, go to Settings / Secrets and variables / Actions and add th
 
 ![GitHub Settings Secrets and variables Actions - with New Repo Secrets](images/GitHub-Settings-SecretsAndVariables-Actions-NewRepoSecrets.PNG)
 
+Additional work will be required. Forget this approach for now. 
+See [PUBLISH_WITH_COLAB](PUBLISH_WITH_COLAB.md) for an easier route to publishing interactive widgets.
 
 
 
