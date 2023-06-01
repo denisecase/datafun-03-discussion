@@ -38,3 +38,26 @@ Rate limits of 100 container image requests per six hours for anonymous usage,
 and 200 container image requests per six hours for free Docker accounts are now in effect. 
 Image requests exceeding these limits will be denied until the six hour window elapses.
 
+## Get DockerHub Access Token
+
+Sign up for DockerHub at <https://hub.docker.com/>.
+
+Create an access token at <https://hub.docker.com/settings/security>.
+Copy it to your clipboard - you'll need to copy that into GitHub.
+
+![DockerHub Account Security Token](images/dockerhub-account-security-token.PNG)
+
+## Add Secrets to GitHub
+
+Add [.github/workflows/deploy.yml](.github/workflows/deploy.yml) to your repo.
+Note the required secrets we'll need to add those to our GitHub account.
+
+In your GitHub repo, go to Settings / Secrets and variables / Actions and add the two repository secrets.
+
+![GitHub Settings Secrets and variables Actions - Add New Repo Secret](images/GitHub-Settings-SecretsAndVariables-Actions-NewRepoSecret.PNG)
+
+![GitHub Settings Secrets and variables Actions - with New Repo Secrets](images/GitHub-Settings-SecretsAndVariables-Actions-NewRepoSecrets.PNG)
+
+
+
+
