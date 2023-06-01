@@ -73,6 +73,7 @@ Voila builds on Binder and enables interactive widgets.
 
 - Read [PUBLISH_TO_BINDER.md](./PUBLISH_TO_BINDER.md).
 - Read [PUBLISH_WITH_VOILA.md](./PUBLISH_WITH_VOILA.md).
+- Read [PUBLISH_TO_COLAB.md](./PUBLISH_TO_COLAB.md).
 
 ## ⚠️ Binder Rate Limits
 
@@ -85,3 +86,6 @@ Image requests exceeding these limits will be denied until the six hour window e
 ## Insights
 ![Voila App](images/published-to-voila.png)
 ![Initial wordcharts](./output.png)
+
+## Google Colab
+![Publish to Google Colab](images/publish-to-colab.PNG)
