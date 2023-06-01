@@ -29,5 +29,7 @@ def read_file(file_path):
         return f.read()
 ```
 
+## Better Yet
 
+Not worth it for this app. Just added the data directly to the notebook.
 
