@@ -12,12 +12,21 @@
 
 ## Set Up Your Environment
 
-In VS Code, open a Terminal / New Terminal and run the following. 
-This will create a virtual environment in the `.venv` folder and install the required packages.
-The commands are for Windows and PowerShell. Slight adjustments may be needed for other environments.
+In VS Code, open a Terminal / New Terminal and run the following command one at a time.
+This will:
+
+1. update important packages in our default Python
+1. create a virtual environment in the `.venv` folder
+1. activate the virtual environment
+1. install an upgraded version of pip in our virtual environment
+1. install upgraded versions of the packages listed in [requirements.txt](./requirements.txt)
+1. set up the ipykernel to run Jupyter Notebooks locally in our .venv virtual environment
+1. install the Jupyter Notebook Extensions Configurator
+
+The commands are for Windows and PowerShell. 
+Slight adjustments may be needed for other environments.
 Click Yes when VS Code asks about the environment. 
-Allow some time for the installations to complete before running the code.
-Project packages are installed from [requirements.txt](./requirements.txt).
+Allow some time for each command to complete before running the next command. 
 
 Note: If `python` doesn't work, replace it with `py` or `python3` in the commands.
 
@@ -51,7 +60,7 @@ jupyter nbextensions_configurator enable --user  # can be skipped for notebook >
 We asked: Which learning resources do you prefer/find most effective?
 
 - One way to gain insight is to turn the discussion into a word cloud as we did in [learning.py](./learning.py).
-- Another is to chart the most common words as we did in the [learning.ipynb](./learning.ipynb) notebook available in [![Voila](https://voila.mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/denisecase/datafun-03-discussion/HEAD?labpath=learning.ipynb).
+- Another is to chart the most common words as we did in the [learning.ipynb](./learning.ipynb) notebook available in [![Voila](https://mybinder.org/v2/gh/denisecase/datafun-03-discussion/HEAD?labpath=learning.ipynb).
 - Could you add a third chart - or other analysis - to help gain insights?
 
 -----
@@ -64,6 +73,12 @@ Voila builds on Binder and enables interactive widgets.
 
 - Read [PUBLISH_TO_BINDER.md](./PUBLISH_TO_BINDER.md).
 - Read [PUBLISH_WITH_VOILA.md](./PUBLISH_WITH_VOILA.md).
+
+## ⚠️ Binder Rate Limits
+
+Rate limits of 100 container image requests per six hours for anonymous usage, 
+and 200 container image requests per six hours for free Docker accounts are in effect. 
+Image requests exceeding these limits will be denied until the six hour window elapses.
 
 -----
 
